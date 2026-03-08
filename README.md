@@ -11,11 +11,7 @@ The project is designed to be straightforward and easy to understand so develope
 
 You can obtain a free API key through the community Discord server.
 
-<p align="left">
-  <a href="https://discord.com/invite/mtvsj2TqXF">
-    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/discord.svg" width="40" alt="Discord">
-  </a>
-</p>
+[![discord](https://img.shields.io/badge/Discord-blue?style=for-the-badge)](https://discord.com/invite/mtvsj2TqXF)
 
 Join the server, request an API key, and you will be able to use the examples in this repository.
 
