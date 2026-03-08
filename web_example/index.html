@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XDERA | TTS DEMO</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="brand">XDERA TTS</div>
+        <div class="version">v1.2.0</div>
+    </header>
+
+    <main>
+        <section class="editor-container">
+            <div class="highlight-wrapper">
+                <div id="backdrop" class="backdrop"></div>
+                <textarea id="inputText" spellcheck="false" placeholder="Enter text for neural synthesis..."></textarea>
+            </div>
+        </section>
+
+        <section class="sidebar">
+            <div class="meta-group">
+                <h3>Voice Profile</h3>
+                <p>Neural Engine: Perla (v4.4.2)<br>Modality: Text-to-Audio</p>
+                <br>
+                <h3>Instructions</h3>
+                <p>Use [tone, vibe, mood, or situation] tags to adjust emotional delivery dynamically.</p>
+                <br>
+                <h3>Note</h3>
+                <p>We're focusing on realism so if you send a long ass paragraph without breathing tags, the TTS model
+                    would run out of oxygen, and even with breathing tag, if the input is too large, the model's voice
+                    could also sounds hoarse.</p>
+            </div>
+            <div class="action-group">
+                <button id="sendBtn">Generate Audio</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="status">Ready</div>
+        <div class="visualizer" id="visualizer">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
