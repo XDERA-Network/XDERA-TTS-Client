@@ -7,15 +7,16 @@ import math
 import struct
 
 async def RCE():
-    uri = "wss://server.rce.my.id/xdera/project/api/tts"
+    uri = "wss://rce.my.id"
+    path = "/xdera/project/tts-v3/generativecenter/connect"
     say = """[bright playful energy, quick chatter] heey look who finally showed up, took you long enough you know, [teasing flirty tone] were you getting ready or something or do you just like making me wait on purpose, [light smug laugh, playful energy] wow you really are the worst sometimes but somehow it is still kinda fun hanging around you, [tone softens for a moment] besides it is nicer than going home too early, that place gets really quiet at night, [brief distant tone, almost casual but heavy underneath] ever since everyone left it just feels like a big empty room anyway, [quick upbeat switch, playful again] so yeah you are basically my excuse to stay out longer now, lucky you, [cheeky flirty finish] so do not disappear on me okay~"""
     headers = {"x-api-key": "[ENTER_YOUR_API_KEY_HERE!]"}
     p = pyaudio.PyAudio()
-    stream = p.open(format=pyaudio.paInt16, channels=1, rate=24605, output=True)
+    stream = p.open(format=pyaudio.paInt16, channels=1, rate=25286, output=True)
 
     print(f"Connecting to {uri}...")
     try:
-        async with websockets.connect(uri, additional_headers=headers) as websocket:
+        async with websockets.connect(uri + path, additional_headers=headers) as websocket:
             print("Connected! Waiting response...")
             await websocket.send(say)
             while True:

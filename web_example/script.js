@@ -62,7 +62,7 @@ function processQueue() {
     while (audioQueue.length > 0) {
         const array = audioQueue.shift();
         const float32 = pcmToFloat32(array);
-        const buffer = audioCtx.createBuffer(1, float32.length, 25605);
+        const buffer = audioCtx.createBuffer(1, float32.length, 25286);
         buffer.getChannelData(0).set(float32);
 
         const source = audioCtx.createBufferSource();
@@ -98,7 +98,7 @@ sendBtn.onclick = async () => {
     }
     if (audioCtx.state === 'suspended') await audioCtx.resume();
 
-    const wsUrl = `wss://server.rce.my.id/xdera/project/api/tts?key=${API_Flavour}`;
+    const wsUrl = "wss://rce.my.id/xdera/project/tts-v3/generativecenter/connect?key=" + API_Flavour;
     const ws = new WebSocket(wsUrl);
 
     sendBtn.disabled = true;
