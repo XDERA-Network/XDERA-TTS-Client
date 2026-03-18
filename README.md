@@ -13,7 +13,7 @@ You can obtain a free API key through the community Discord server.
 
 [![discord](https://img.shields.io/badge/Discord-blue?style=for-the-badge)](https://discord.com/invite/mtvsj2TqXF)
 
-Join the server, request an API key, and you will be able to use the examples in this repository.
+Join the server, Look for an API Key on the #Announcement channel, and you will be able to use the examples in this repository.
 
 ---
 
